@@ -24,10 +24,10 @@ const App = () => {
     flexDirection: flexDirection,
     justifyContent: justifyContent,
     alignItems: alignItems,
-    width: "650px",
-    height: "650px",
+    minWidth: "400px",
+    height: "400px",
     backgroundImage: `url(${tree})`,
-    backgroundRepeat: "no - repeat",
+    backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "contain",
   };
@@ -39,11 +39,11 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <h1>Frohe Weihnachten! </h1>
       <p>
         Wähle die passenden Flex-Box Werte um die Geschenke unter dem Baum zu
-        platzieren.{" "}
+        platzieren.
       </p>
       <div className="dropdownContainer">
         <div>

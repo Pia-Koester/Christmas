@@ -20,8 +20,8 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: 3rem;
+  line-height: 1.2;
   font-family: "Rubik Doodle Shadow";
   text-align: center;
 }
@@ -29,7 +29,29 @@ h1 {
 .dropdownContainer {
   display: flex;
   gap: 1rem;
+  text-align: center;
 }
-.dropdownContainer label {
-  margin-right: 0.5rem;
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    padding-left: 2rem;
+  }
+
+  .dropdownContainer {
+    flex-direction: column;
+  }
 }
