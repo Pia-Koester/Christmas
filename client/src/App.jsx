@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 
 const App = () => {
   const [flexDirection, setFlexDirection] = useState("row");
@@ -39,50 +38,52 @@ const App = () => {
 
   return (
     <div>
-      <div>
-        <h1>Frohe Weihnachten! </h1>
-        <p>
-          Wähle die passenden Flex-Box Werte um die Geschenke unter dem Baum zu
-          platzieren.{" "}
-        </p>
-        <label htmlFor="flexDirection">Flex Direction:</label>
-        <select
-          id="flexDirection"
-          value={flexDirection}
-          onChange={handleFlexDirectionChange}
-        >
-          <option value="row">Row</option>
-          <option value="column">Column</option>
-        </select>
-      </div>
+      <h1>Frohe Weihnachten! </h1>
+      <p>
+        Wähle die passenden Flex-Box Werte um die Geschenke unter dem Baum zu
+        platzieren.{" "}
+      </p>
+      <div className="dropdownContainer">
+        <div>
+          <label htmlFor="flexDirection">Flex Direction:</label>
+          <select
+            id="flexDirection"
+            value={flexDirection}
+            onChange={handleFlexDirectionChange}
+          >
+            <option value="row">Row</option>
+            <option value="column">Column</option>
+          </select>
+        </div>
 
-      <div>
-        <label htmlFor="justifyContent">Justify Content:</label>
-        <select
-          id="justifyContent"
-          value={justifyContent}
-          onChange={handleJustifyContentChange}
-        >
-          <option value="flex-start">Flex Start</option>
-          <option value="center">Center</option>
-          <option value="flex-end">Flex End</option>
-          <option value="space-between">Space Between</option>
-          <option value="space-around">Space Around</option>
-          <option value="space-evenly">Space-Evenly</option>
-        </select>
-      </div>
+        <div>
+          <label htmlFor="justifyContent">Justify Content:</label>
+          <select
+            id="justifyContent"
+            value={justifyContent}
+            onChange={handleJustifyContentChange}
+          >
+            <option value="flex-start">Flex Start</option>
+            <option value="center">Center</option>
+            <option value="flex-end">Flex End</option>
+            <option value="space-between">Space Between</option>
+            <option value="space-around">Space Around</option>
+            <option value="space-evenly">Space Evenly</option>
+          </select>
+        </div>
 
-      <div>
-        <label htmlFor="alignItems">Align Items:</label>
-        <select
-          id="alignItems"
-          value={alignItems}
-          onChange={handleAlignItemsChange}
-        >
-          <option value="flex-start">Flex Start</option>
-          <option value="center">Center</option>
-          <option value="flex-end">Flex End</option>
-        </select>
+        <div>
+          <label htmlFor="alignItems">Align Items:</label>
+          <select
+            id="alignItems"
+            value={alignItems}
+            onChange={handleAlignItemsChange}
+          >
+            <option value="flex-start">Flex Start</option>
+            <option value="center">Center</option>
+            <option value="flex-end">Flex End</option>
+          </select>
+        </div>
       </div>
 
       <div style={flexContainerStyle}>
