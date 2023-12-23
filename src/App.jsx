@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import tree from "./assets/tree.webp";
+import presents from "./assets/presents.png";
 
 const App = () => {
   const [flexDirection, setFlexDirection] = useState("row");
@@ -24,7 +26,7 @@ const App = () => {
     alignItems: alignItems,
     width: "650px",
     height: "650px",
-    backgroundImage: `url("./21159783_6350849.webp")`,
+    backgroundImage: `url(${tree})`,
     backgroundRepeat: "no - repeat",
     backgroundPosition: "center",
     backgroundSize: "contain",
@@ -87,9 +89,9 @@ const App = () => {
       </div>
 
       <div style={flexContainerStyle}>
-        <img style={flexItemStyle} src="./presents.png" />
-        <img style={flexItemStyle} src="./presents.png" />
-        <img style={flexItemStyle} src="./presents.png" />
+        <img style={flexItemStyle} src={presents} />
+        <img style={flexItemStyle} src={presents} />
+        <img style={flexItemStyle} src={presents} />
       </div>
     </div>
   );
