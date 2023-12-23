@@ -24,7 +24,7 @@ const App = () => {
     alignItems: alignItems,
     width: "650px",
     height: "650px",
-    backgroundImage: `url("./public/21159783_6350849.webp")`,
+    backgroundImage: `url("./21159783_6350849.webp")`,
     backgroundRepeat: "no - repeat",
     backgroundPosition: "center",
     backgroundSize: "contain",
@@ -87,9 +87,9 @@ const App = () => {
       </div>
 
       <div style={flexContainerStyle}>
-        <img style={flexItemStyle} src="./public/presents.png" />
-        <img style={flexItemStyle} src="./public/presents.png" />
-        <img style={flexItemStyle} src="./public/presents.png" />
+        <img style={flexItemStyle} src="./presents.png" />
+        <img style={flexItemStyle} src="./presents.png" />
+        <img style={flexItemStyle} src="./presents.png" />
       </div>
     </div>
   );
